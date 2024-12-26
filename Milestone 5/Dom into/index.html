@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <section class="fruits">
+        <ul id="fruit-title">
+        <li>JackFruit</li>
+        <li>Dragon</li>
+        </ul>
+        <ul class="fruits-container">
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>Berry</li>
+        </ul>
+    </section>
+    <script>
+        const someli = document.querySelectorAll(".fruits-container");
+        for (const li of someli){
+            console.log(li.innerText);
+        }
+        const someli1 = document.querySelector(".fruits-container  li");
+        console.log(someli1.innerText);
+
+        const work1=document.getElementById("fruit-title");
+        console.log(work1.innerText);
+
+        const work3 = document.getElementsByClassName("fruits-container");
+        for (const list of work3){
+            console.log(list.innerText);
+        }
+        const work2 = document.getElementsByClassName("fruits-container");
+        for (const list of work2) {
+            console.log(list.innerText);
+        }
+
+        document.getElementById("fruit-title").style;
+    </script>
+</body>
+</html>
